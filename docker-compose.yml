@@ -36,6 +36,7 @@ services:
     volumes:
       - "wp:/var/www/html:rw"
       - "./bin/install-wp.sh:/usr/local/bin/install-wp:ro"
+      - "./bin/update-site-url.sh:/usr/local/bin/update-site-url:ro"
 volumes:
   wp: {}
   db: {}
